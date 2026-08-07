@@ -1,0 +1,247 @@
+/*====================================
+        RESPONSIVE CSS
+====================================*/
+
+/* Large Tablets */
+@media (max-width: 1200px){
+
+header{
+    padding:15px 5%;
+}
+
+section{
+    padding:70px 5%;
+}
+
+.hero{
+    gap:40px;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.hero-image img{
+    width:380px;
+}
+
+}
+
+
+/* Tablets */
+@media (max-width: 992px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    min-height:auto;
+    padding-top:60px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-image img{
+    width:320px;
+}
+
+.about,
+.about-page{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-page{
+    grid-template-columns:1fr;
+}
+
+.services,
+.services-page,
+.practice-section,
+.choose-box,
+.stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.appointment-container,
+.contact-form{
+    width:100%;
+}
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+header{
+    padding:15px;
+}
+
+.logo h2{
+    font-size:22px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+nav ul li{
+    margin:5px 0;
+}
+
+.btn,
+.hero-btn{
+    width:100%;
+    text-align:center;
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.hero-text h4{
+    font-size:16px;
+}
+
+.hero-text h1{
+    font-size:32px;
+    line-height:1.3;
+}
+
+.hero-text p{
+    font-size:15px;
+}
+
+.hero-image img{
+    width:260px;
+}
+
+.page-banner{
+    padding:60px 20px;
+}
+
+.page-banner h1{
+    font-size:30px;
+}
+
+.about-content h2,
+.services h2,
+.choose h2,
+.consultation h2,
+.contact-page h2{
+    font-size:28px;
+}
+
+.services,
+.services-page,
+.practice-section,
+.choose-box,
+.stats{
+    grid-template-columns:1fr;
+}
+
+.card,
+.service-card,
+.practice-card{
+    padding:25px;
+}
+
+.appointment-container,
+.contact-form{
+    padding:25px;
+}
+
+input,
+textarea,
+select{
+    font-size:15px;
+}
+
+.social-icons{
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+}
+
+footer{
+    padding:20px;
+    font-size:14px;
+}
+
+}
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.hero-text h1{
+    font-size:26px;
+}
+
+.hero-text p{
+    font-size:14px;
+}
+
+.hero-image img{
+    width:220px;
+}
+
+.page-banner h1{
+    font-size:24px;
+}
+
+.page-banner p{
+    font-size:14px;
+}
+
+.logo i{
+    font-size:24px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.card i,
+.service-card i,
+.practice-card i{
+    font-size:36px;
+}
+
+.stat-box h3{
+    font-size:30px;
+}
+
+.info-box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.info-box i{
+    margin-bottom:10px;
+}
+
+.map-section iframe{
+    height:250px;
+}
+
+}
+

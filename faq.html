@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Advocate Alok Kumar Gurha</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+.faq-page{
+    padding:80px 8%;
+    background:#f8f9fc;
+}
+
+.faq-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.faq-heading h1{
+    color:#081b33;
+    font-size:45px;
+}
+
+.faq-heading p{
+    color:#666;
+    margin-top:10px;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-box{
+    background:#fff;
+    margin-bottom:18px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.faq-question{
+    width:100%;
+    padding:22px;
+    background:#081b33;
+    color:#fff;
+    border:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+}
+
+.faq-question span{
+    font-size:28px;
+    color:#d4af37;
+}
+
+.faq-answer{
+    display:none;
+    padding:20px;
+    line-height:1.8;
+    color:#555;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-scale-balanced"></i>
+<h2>Advocate Alok Kumar Gurha</h2>
+</div>
+
+<nav>
+<ul>
+   <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="practice.html">Practice Areas</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+</ul>
+</nav>
+
+<a href="appointment.html" class="btn">Book Consultation</a>
+
+</header>
+
+<section class="faq-page">
+
+<div class="faq-heading">
+
+<h1>Frequently Asked Questions</h1>
+
+<p>
+Find answers to common legal questions.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+How do I book an appointment?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Book online through the Appointment page or call
+<strong>+91 9935366740</strong>.
+
+</div>
+
+</div>
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+Which types of cases do you handle?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Civil, Criminal, Property, Family, Consumer,
+Corporate, Cyber Crime and Documentation matters.
+
+</div>
+
+</div>
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+Do you provide online consultation?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Yes. Consultation is available through Phone,
+WhatsApp and Video Call.
+
+</div>
+
+</div>
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+What documents should I bring?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Bring all legal documents, notices, ID proof,
+property papers and supporting evidence.
+
+</div>
+
+</div>
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+Where is your office?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+⚖ Civil Court Behind District Magistrate Office Collectorate Compound Kanpur, Uttar Pradesh, India
+
+</div>
+
+</div>
+
+<div class="faq-box">
+
+<button class="faq-question">
+
+What are your office timings?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Monday to Saturday
+
+10:00 AM to 5:00 PM
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Advocate Alok Kumar Gurha. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+const faq=document.querySelectorAll(".faq-question");
+
+faq.forEach((item)=>{
+
+item.addEventListener("click",()=>{
+
+const ans=item.nextElementSibling;
+
+document.querySelectorAll(".faq-answer").forEach((a)=>{
+
+if(a!==ans){
+
+a.style.display="none";
+
+a.previousElementSibling.querySelector("span").innerHTML="+";
+
+}
+
+});
+
+if(ans.style.display==="block"){
+
+ans.style.display="none";
+
+item.querySelector("span").innerHTML="+";
+
+}else{
+
+ans.style.display="block";
+
+item.querySelector("span").innerHTML="−";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
