@@ -56,109 +56,109 @@
 
 <section class="appointment-section">
 
-    <div class="appointment-container">
+<div class="appointment-container">
 
-        <h2>Appointment Form</h2>
+    <h2>Appointment Form</h2>
 
-        <form action="#" method="post">
+    <form action="https://formspree.io/f/mdenaaqn" method="POST">
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Full Name</label>
+            <label>Full Name</label>
 
-                <input
+            <input
                 type="text"
+                name="name"
                 placeholder="Enter Your Name"
                 required>
 
-            </div>
+        </div>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Mobile Number</label>
+            <label>Mobile Number</label>
 
-                <input
+            <input
                 type="tel"
+                name="mobile"
                 placeholder="Enter Mobile Number"
                 required>
 
-            </div>
+        </div>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Email Address</label>
+            <label>Email Address</label>
 
-                <input
+            <input
                 type="email"
+                name="email"
                 placeholder="Enter Email"
                 required>
 
-            </div>
+        </div>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Case Type</label>
+            <label>Case Type</label>
 
-                <select required>
+            <select name="case_type" required>
 
-                    <option value="">Select Case</option>
+                <option value="">Select Case</option>
 
-                    <option>Civil Case</option>
+                <option>Civil Case</option>
+                <option>Criminal Case</option>
+                <option>Property Case</option>
+                <option>Family Case</option>
+                <option>Consumer Case</option>
+                <option>Corporate Law</option>
+                <option>Cyber Crime</option>
 
-                    <option>Criminal Case</option>
+            </select>
 
-                    <option>Property Case</option>
+        </div>
 
-                    <option>Family Case</option>
+        <div class="form-group">
 
-                    <option>Consumer Case</option>
+            <label>Preferred Date</label>
 
-                    <option>Corporate Law</option>
-
-                    <option>Cyber Crime</option>
-
-                </select>
-
-            </div>
-
-            <div class="form-group">
-
-                <label>Preferred Date</label>
-
-                <input
+            <input
                 type="date"
+                name="preferred_date"
                 required>
 
-            </div>
+        </div>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Preferred Time</label>
+            <label>Preferred Time</label>
 
-                <input
+            <input
                 type="time"
+                name="preferred_time"
                 required>
 
-            </div>
+        </div>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label>Your Message</label>
+            <label>Your Message</label>
 
-                <textarea
+            <textarea
+                name="message"
                 rows="5"
                 placeholder="Describe your legal issue..."
                 required></textarea>
 
-            </div>
+        </div>
 
-            <button type="submit" class="btn">
-                Book Appointment
-            </button>
+        <button type="submit" class="btn">
+            Book Appointment
+        </button>
 
-        </form>
+    </form>
 
-    </div>
+</div>
 
 </section>
 
