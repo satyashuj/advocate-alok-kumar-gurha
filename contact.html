@@ -138,25 +138,43 @@ Kanpur Nagar-17
 
         <h2>Send a Message</h2>
 
-        <form>
+     <form action="https://formspree.io/f/mdenaaqn" method="POST">
 
-            <input type="text" placeholder="Your Name" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
 
-            <input type="email" placeholder="Your Email" required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required>
 
-            <input type="tel" placeholder="Your Mobile Number" required>
+    <input
+        type="tel"
+        name="mobile"
+        placeholder="Your Mobile Number"
+        required>
 
-            <input type="text" placeholder="Subject" required>
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required>
 
-            <textarea rows="6"
-            placeholder="Write Your Message..."
-            required></textarea>
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Write Your Message..."
+        required></textarea>
 
-            <button type="submit" class="btn">
-                Send Message
-            </button>
+    <button type="submit" class="btn">
+        Send Message
+    </button>
 
-        </form>
+</form>
 
     </div>
 
